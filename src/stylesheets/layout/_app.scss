@@ -1,0 +1,7 @@
+.App {
+  @include grid-container(0);
+  @include bordered-container(1px, solid, var(--trans-dark-3));
+  @include top-edges-border-radius(6px);
+  @include bottom-edges-border-radius(6px);
+  background: var(--midnight-blue);
+}

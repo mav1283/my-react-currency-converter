@@ -1,0 +1,11 @@
+.App-header {
+  @extend .flex-centered;
+  @include two-sides-padded-container(1em, 1.5em);
+  @include inner-box-shadow(inset, 0, 0, 2px, 1px, var(--trans-light-1));
+  @include top-edges-border-radius(inherit);
+  h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--trans-light-7);
+  }
+}

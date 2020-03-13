@@ -1,0 +1,9 @@
+.App-body {
+  @include grid-container(0);
+  @include border-top-bottom(1px, solid, var(--trans-dark-5));
+  .currency-selector {
+    &:first-child {
+      @extend .dark-contrast;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@mixin box-shadow($x, $y, $z, $color) {
+  box-shadow: $x $y $z $color;
+  -webkit-box-shadow: $x $y $z $color;
+}
+
+@mixin inner-box-shadow($type, $x, $y, $size, $spread, $color) {
+  box-shadow: $type $x $y $size $spread $color;
+  -webkit-box-shadow: $type $x $y $size $spread $color;
+}
+
+@mixin border-radius($val) {
+  border-radius: $val;
+  -webkit-border-radius: $val;
+}
+
+@mixin top-right-border-radius($val) {
+  border-top-right-radius: $val;
+  -webkit-border-top-right-radius: $val;
+  -moz-border-radius-topright: $val;
+}
+
+@mixin top-left-border-radius($val) {
+  border-top-left-radius: $val;
+  -webkit-border-top-left-radius: $val;
+  -moz-border-radius-topleft: $val;
+}
+
+@mixin bottom-left-border-radius($val) {
+  border-bottom-left-radius: $val;
+  -webkit-border-bottom-left-radius: $val;
+  -moz-border-radius-bottomleft: $val;
+}
+
+@mixin bottom-right-border-radius($val) {
+  border-bottom-right-radius: $val;
+  -webkit-border-bottom-right-radius: $val;
+  -moz-border-radius-bottomright: $val;
+}
+
+@mixin top-edges-border-radius($val) {
+  @include top-left-border-radius($val);
+  @include top-right-border-radius($val);
+}
+
+@mixin bottom-edges-border-radius($val) {
+  @include bottom-left-border-radius($val);
+  @include bottom-right-border-radius($val);
+}
+
+@mixin bordered-container($size, $type, $color) {
+  border: $size $type $color;
+}
+
+@mixin border-top-bottom($size, $type, $color) {
+  border-top: $size $type $color;
+  border-bottom: $size $type $color;
+}
+
+@mixin text-shadow($x, $y, $z, $color) {
+  text-shadow: $x $y $z $color;
+  -webkit-text-shadow: $x $y $z $color;
+}
+
+@mixin appearance-none {
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+}
+
+@mixin uniform-sides-padded-container($size) {
+  padding: $size;
+}
+
+@mixin two-sides-padded-container($x, $y) {
+  padding: $x $y;
+}
+
+@mixin four-sides-padded-container($w, $x, $y, $z) {
+  padding: $w $x $y $z;
+}
+
+@mixin form-input-padding($vert, $horz) {
+  padding: $vert $horz;
+}
+
+@mixin button-details($bg, $color) {
+  background: $bg;
+  color: $color;
+  border-radius: 0.25em;
+}
+
+@mixin grid-container($size) {
+  display: grid;
+  grid-gap: $size;
+}

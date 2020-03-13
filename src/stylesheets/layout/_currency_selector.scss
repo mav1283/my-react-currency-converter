@@ -1,0 +1,23 @@
+.currency-selector {
+  //@include inner-box-shadow(inset, 0, 0, 2px, 1px, var(--trans-light-1));
+  @include grid-container(0.5em);
+  grid-template-columns: 1fr auto auto;
+  @include two-sides-padded-container(1em, 1.5em);
+  .custom-select {
+    @include appearance-none;
+    background: var(--wet-asphalt);
+    cursor: pointer;
+  }
+  .flag {
+    position: relative;
+    width: 100%;
+    height: auto;
+    //background-size: cover;
+    // &::after {
+    //   position: absolute;
+    //   display: block;
+    //   content: '';
+    //   padding-bottom: 100%;
+    // }
+  }
+}

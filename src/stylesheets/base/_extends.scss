@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+}
+
+.flex-centered {
+  @extend .flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-small {
+  font-size: 0.75rem !important;
+}
+
+.dark-contrast {
+  background: var(--trans-dark-3);
+}
+
+.light-contrast {
+  background: var(--trans-light-3);
+}

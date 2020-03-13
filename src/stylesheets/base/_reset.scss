@@ -1,0 +1,40 @@
+body,
+body * {
+  box-sizing: unset;
+  margin: unset;
+  padding: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.025rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+h5,
+p,
+a {
+  font-size: 1rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h1 {
+  font-size: 2rem;
+}
